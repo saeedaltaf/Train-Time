@@ -43,17 +43,29 @@ body{
     padding: 10px;
 }
 #addTrainBtn{
-    opacity: 1;
+    /* opacity: 1; */
     background-color: grey;
     color: white;
     align-content: center;
 }
 #clearTrainBtn{
-    opacity: 1;
+    /* opacity: 1; */
     background-color: grey;
     color: white;
     align-content: center;
 }
+#addTrainBtn:hover{
+    background-color: green;
+}
+#clearTrainBtn:hover{
+    background-color: red;
+}
+h5{
+    text-align: center;
+}
 h7{
     color: green;
+}
+table{
+    font-size: 14px;
 }
