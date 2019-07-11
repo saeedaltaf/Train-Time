@@ -1,0 +1,36 @@
+*{
+    font-family: 'Literata', serif;
+}
+#header{
+
+    text-align: center;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    margin: 20px;
+    background-color: whitesmoke;
+    opacity: .65;
+    height: 150px;
+    border-radius: 20px;
+}
+body{
+    background: url("wallpaper.jpg");
+    /* To get image to fit properly to fill background: */
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+#addTrain{
+    background-color: green;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+#trainInfo{
+    background-color: blue;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+    width: 800px;
+}
