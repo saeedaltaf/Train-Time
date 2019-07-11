@@ -22,7 +22,7 @@ body{
 } 
 #addTrain{
     background-color: whitesmoke;
-    opacity: .7;
+    opacity: .9;
     float: left;
     margin-top: 10px;
     margin-left: 20px;
@@ -33,21 +33,26 @@ body{
 }
 #trainInfo{
     background-color: whitesmoke;
-    opacity: .7;
+    opacity: .9;
     float: left;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
-    width: 650px;
+    /* width: 700px; */
     padding: 10px;
 }
 #addTrainBtn{
-    background-color: green;
+    opacity: 1;
+    background-color: grey;
+    color: white;
     align-content: center;
 }
 #clearTrainBtn{
-    background-color: red;
+    opacity: 1;
+    background-color: grey;
+    color: white;
+    align-content: center;
 }
 h7{
     color: green;
