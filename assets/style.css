@@ -21,16 +21,34 @@ body{
     background-size: cover;
 } 
 #addTrain{
-    background-color: green;
+    background-color: whitesmoke;
+    opacity: .7;
     float: left;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 20px;
     width: 400px;
+    padding: 10px;
 }
 #trainInfo{
-    background-color: blue;
+    background-color: whitesmoke;
+    opacity: .7;
     float: left;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 20px;
-    width: 800px;
+    width: 650px;
+    padding: 10px;
+}
+#addTrainBtn{
+    background-color: green;
+    align-content: center;
+}
+#clearTrainBtn{
+    background-color: red;
+}
+h7{
+    color: green;
 }
