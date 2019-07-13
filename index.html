@@ -23,6 +23,10 @@
     <link rel="icon" type="image/png" href="assets/train.ico">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -70,7 +74,6 @@
                     </div>
 
                     <button class="btn btn-default" id="addTrainBtn" type="submit">Submit</button>
-                    <button class="btn btn-default" id="clearTrainBtn" type="reset">Clear</button>
 
                 </form>
             </div>
@@ -78,18 +81,18 @@
     </div>
     <div class="panel-heading" id="trainInfo">
         <h5 class="panel-title"><strong>Current Train Schedule</strong></h5>
-        <table class = "table table-hover" id = "trainTable">
-                <thead>
-                    <tr>
-                        <th>Train Name</th>
-                        <th>Destination</th>
-                        <th>Frequency (min)</th>
-                        <th>Next Arrival</th>
-                        <th>Minutes Away</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
+        <table class="table table-hover" id="trainTable">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
     </div>
 
 
