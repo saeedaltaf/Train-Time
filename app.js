@@ -48,6 +48,28 @@ $("#startTime").val("");
 $("#trainFrequency").val("");
 });//<---- this closes the on-click event for adding trains
 
+ // Firebase watcher + initial loader to add the data from firebase into the table:
+ database.ref().on("child_added", function (childSnapshot){
+     console.log(childSnapshot.val().name);
+     console.log(childSnapshot.val().destination);
+     console.log(childSnapshot.val().startTime);
+     console.log(childSnapshot.val().frequency);
+
+     var getName = childSnapshot.val().name;
+     var getDestination = childSnapshot.val().destination;
+     var getStartTime = childSnapshot.val().startTime;
+     var getFrequency = childSnapshot.val().frequency;
+     var row = $("<tr>");
+
+     row.append("<td>" + getName + "</td>")
+     row.append("<td>" + getDestination +"</td>")
+     row.append("<td>" + getStartTime + "</td>")
+     row.append("<td>" + getFrequency + "</td>")
+
+     $("#trainTable > tbody").append(row)
+
+ })
+
 
 
 
